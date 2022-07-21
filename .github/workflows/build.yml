@@ -18,12 +18,12 @@ jobs:
     - name: Check out the code
       uses: actions/checkout@v3
     - name: Download GraphQL Schema
-        run: bin/apollo-schema-download.sh
+      run: bin/apollo-schema-download.sh
     - name: Bootstrap
-        run: make bootstrap
+      run: make bootstrap
 
     - name: Run tests
-        run: make test
+      run: make test
  
     - name: Publish build and test results
       run: |
